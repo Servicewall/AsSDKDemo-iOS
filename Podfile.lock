@@ -1,0 +1,16 @@
+PODS:
+  - SwSDK (1.0.2)
+
+DEPENDENCIES:
+  - SwSDK
+
+SPEC REPOS:
+  https://github.com/Servicewall/Cocoapods-specs.git:
+    - SwSDK
+
+SPEC CHECKSUMS:
+  SwSDK: b4427aa1c584e17648218a525a17fdd6098daf99
+
+PODFILE CHECKSUM: 542800f72be2b550ccf5bccd6fea7e1da2513899
+
+COCOAPODS: 1.15.2

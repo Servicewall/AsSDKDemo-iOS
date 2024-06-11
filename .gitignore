@@ -1,7 +1,9 @@
 .DS_Store
 *xcodeproj/xcuserdata/*
-*.xcuserstate
+*xcodeproj/*.xcworkspace/xcuserdata/*
+*.xcworkspace/xcuserdata/*
 build/
 *.zip
 doc/integration_guide/*.pdf
+Pods/
 

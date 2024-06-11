@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4EED37736E165E5BDC3FA477 /* Pods_AsSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10ACC6C441B52B8861633350 /* Pods_AsSDKDemo.framework */; };
 		C37ADBED2BD26B8A00EE13CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37ADBEC2BD26B8A00EE13CA /* AppDelegate.swift */; };
 		C37ADBEF2BD26B8A00EE13CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37ADBEE2BD26B8A00EE13CA /* SceneDelegate.swift */; };
 		C37ADBF12BD26B8A00EE13CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37ADBF02BD26B8A00EE13CA /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10ACC6C441B52B8861633350 /* Pods_AsSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B1C166DE548FD4C7D6AB82D /* Pods-AsSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-AsSDKDemo/Pods-AsSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8DD1061835F410ED37DFFE70 /* Pods-AsSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-AsSDKDemo/Pods-AsSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C37ADBE92BD26B8A00EE13CA /* AsSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37ADBEC2BD26B8A00EE13CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C37ADBEE2BD26B8A00EE13CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EED37736E165E5BDC3FA477 /* Pods_AsSDKDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D7B8D5A66E2D47414507AA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DD1061835F410ED37DFFE70 /* Pods-AsSDKDemo.debug.xcconfig */,
+				3B1C166DE548FD4C7D6AB82D /* Pods-AsSDKDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		51B0C4E273F98EB59C04C2C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10ACC6C441B52B8861633350 /* Pods_AsSDKDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C37ADBE02BD26B8A00EE13CA = {
 			isa = PBXGroup;
 			children = (
 				C37ADBEB2BD26B8A00EE13CA /* AsSDKDemo */,
 				C37ADBEA2BD26B8A00EE13CA /* Products */,
+				4D7B8D5A66E2D47414507AA4 /* Pods */,
+				51B0C4E273F98EB59C04C2C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C37ADBFD2BD26B8B00EE13CA /* Build configuration list for PBXNativeTarget "AsSDKDemo" */;
 			buildPhases = (
+				D001DC16913089DB95F55507 /* [CP] Check Pods Manifest.lock */,
 				C37ADBE52BD26B8A00EE13CA /* Sources */,
 				C37ADBE62BD26B8A00EE13CA /* Frameworks */,
 				C37ADBE72BD26B8A00EE13CA /* Resources */,
+				15DADF8FDD571FE7B3E8D198 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15DADF8FDD571FE7B3E8D198 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AsSDKDemo/Pods-AsSDKDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AsSDKDemo/Pods-AsSDKDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AsSDKDemo/Pods-AsSDKDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D001DC16913089DB95F55507 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AsSDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C37ADBE52BD26B8A00EE13CA /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		C37ADBFE2BD26B8B00EE13CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DD1061835F410ED37DFFE70 /* Pods-AsSDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,6 +386,7 @@
 		};
 		C37ADBFF2BD26B8B00EE13CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B1C166DE548FD4C7D6AB82D /* Pods-AsSDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
