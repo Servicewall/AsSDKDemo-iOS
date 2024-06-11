@@ -1,16 +1,21 @@
 PODS:
-  - SwSDK (1.0.2)
+  - SwSDK (1.2.3)
+  - Toast-Swift (5.1.1)
 
 DEPENDENCIES:
   - SwSDK
+  - Toast-Swift (~> 5.1.1)
 
 SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Toast-Swift
   https://github.com/Servicewall/Cocoapods-specs.git:
     - SwSDK
 
 SPEC CHECKSUMS:
-  SwSDK: b4427aa1c584e17648218a525a17fdd6098daf99
+  SwSDK: 46d4949179661e56d057b43d488e6c56976d4704
+  Toast-Swift: 7a03a532afe3a560d4044bc7c237e2864d295173
 
-PODFILE CHECKSUM: 542800f72be2b550ccf5bccd6fea7e1da2513899
+PODFILE CHECKSUM: 02d69f4c625a940e789934a5ccaffad131893102
 
 COCOAPODS: 1.15.2
