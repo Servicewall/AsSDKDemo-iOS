@@ -35,7 +35,7 @@ class ViewController: UIViewController {
             return
         }
         
-//        let swSDK = SwSDKManager.shared()
+        let swSDK = SwSDKManager.shared()
         UserDefaults().set(api?.absoluteString, forKey: "lastInput")
         UserDefaults().synchronize()
         
@@ -60,15 +60,15 @@ class ViewController: UIViewController {
                 return
             }
             
-//            if swSDK.checkCaptcha(with: httpResponse) {
-//                swSDK.startCaptcha { headers in
-//                    print("captcha success")
-//                } failure: { err in
-//                    print("captcha failed")
-//                }
-//                
-//                return
-//            }
+            if swSDK.checkCaptcha(with: response as! HTTPURLResponse) {
+                swSDK.startCaptcha { headers in
+                    print("captcha success")
+                } failure: { err in
+                    print("captcha failed")
+                }
+                
+                return
+            }
             DispatchQueue.main.async {
                 self.view.makeToast("接口请求发送成功")
             }
